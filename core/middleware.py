@@ -1,4 +1,4 @@
-# Adds headers used by browser  (CORS) so founder Js can call the backrnd
+# Adds headers used by browsers (CORS) so frontend JS can call the backend
 
 def add_cors_headers(handler):
     handler.send_header("Access-Control-Allow-Origin", "*")

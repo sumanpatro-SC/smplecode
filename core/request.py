@@ -1,4 +1,4 @@
-
+# Handles incoming HTTP request data (reads JSON from the client)
 
 import json
 
