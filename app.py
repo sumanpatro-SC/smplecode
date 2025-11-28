@@ -1,6 +1,7 @@
 from http.server import HTTPServer
 from router import StudentRouter
 
+
 def run_server(port=8000):
 
     server = HTTPServer(("",port),StudentRouter)
