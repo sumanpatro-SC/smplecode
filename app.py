@@ -1,15 +1,13 @@
+# Starts the API server and initializes the database
+
 from http.server import HTTPServer
 from router import StudentRouter
-from database.connection import init_database 
+from database.connection import init_database
 
-
-# Changed default port from 8000 to 8001
-def run_server(port=8001): 
-    # Initialize the database before starting the server
-    init_database() 
-    
-    server = HTTPServer(("",port),StudentRouter)
-    print(f"Server running at http://localhost:{port}")
+def run_server():
+    init_database()
+    server = HTTPServer(("", 8000), StudentRouter)
+    print("🚀 Server running at http://localhost:8000")
     server.serve_forever()
 
 if __name__ == "__main__":
