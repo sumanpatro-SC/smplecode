@@ -47,4 +47,8 @@ def db_delete(student_id):
     conn.execute("DELETE FROM students WHERE id=?", (student_id,))
     conn.commit()
     conn.close()
+<<<<<<< HEAD
     return student
+=======
+    return student
+>>>>>>> 3a05da450b2fabcb3f28719b7afae6d772ac5c9d
