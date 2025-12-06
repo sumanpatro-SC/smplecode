@@ -22,8 +22,4 @@ def service_update(student_id, data):
     return db_update(student_id, data)
 
 def service_delete(student_id):
-<<<<<<< HEAD
     return db_delete(student_id)
-=======
-    return db_delete(student_id)
->>>>>>> 3a05da450b2fabcb3f28719b7afae6d772ac5c9d

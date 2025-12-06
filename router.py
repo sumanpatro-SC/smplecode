@@ -113,8 +113,4 @@ class StudentRouter(BaseHTTPRequestHandler):
 
     def log_message(self, format, *args):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-<<<<<<< HEAD
         print(f"[{timestamp}] [Server] {format % args}")
-=======
-        print(f"[{timestamp}] [Server] {format % args}")
->>>>>>> 3a05da450b2fabcb3f28719b7afae6d772ac5c9d
